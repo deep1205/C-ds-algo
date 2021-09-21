@@ -1,0 +1,118 @@
+{
+	// Place your vs_code_codechef workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Default cpp formate": {
+		"scope": "cpp",
+		"prefix": [
+			"include",
+			"default"
+		],
+		"body": [
+			"#include <iostream>",
+			"#include <algorithm>",
+			"#include <string>",
+			"#include <vector>",
+			"#include <cstdlib>",
+			"#include <bitset>",
+			"#include <set>",
+			"#include <map>",
+			"#include <iterator>",
+			"#include <cmath>",
+			"#include <time.h>",
+			"\n",
+			"using namespace std;",
+			"#define ll long long",
+			"#define ull unsigned long long",
+			"#define FOR(i,n) for(int i=0;i<n;++i)",
+			"#define FORE(i,n) for(int i=0;i<=n;++i)",
+			"#define FORAB(i,a,b) for(int i=a;i<b;++i)",
+			"#define FORABE(i,a,b) for(int i=a;i<=b;++i)",
+			"#define pb push_back",
+			"#define ff first",
+			"#define ss second",
+			"\n",
+			"//Sort array in discending order (n to 1)",
+			"bool decSort(ll a,ll b){",
+			"     return a>b;",
+			"}",
+			"\n",
+			"//Sort array in ascending order ",
+			"bool incSort(ll a,ll b){",
+			"     return a<b;",
+			"}",
+			"\n",
+			"//find the maximum element of a array",
+			"ll max_of_array(ll a[],ll n){",
+			"   ll mx=a[0];",
+			"   for(ll i=0;i<n;i++){",
+			"    if(a[i]>mx) mx = a[i];",
+			"   }",
+			"   return mx;",
+			"}",
+			"\n",
+			"//find the minimum element of a array",
+			"ll min_of_array(ll a[],ll n){",
+			"   ll mn=a[0];",
+			"   for(ll i=0;i<n;i++){",
+			"       if(a[i]<mn)mn=a[i];",
+			"    }",
+			"   return mn;",
+			"}",
+			"\n",
+			"bool isPrime(ll n){",
+			"   if(n==1) return false;",
+			"   if(n==2) return true;",
+			"   for(ll i=2;i*i<=n;i++){",
+			"       if(n%i==0)return false;",
+			"   }",
+			"   return true;",
+			"}\n",
+			"ll gcd(ll a, ll b)",
+			"{",
+			"   if (b == 0)",
+			"       return a;",
+			"   return gcd(b, a % b);",
+			"}\n",
+			"ll lcm(ll a, ll b)",
+			"{",
+			"   return (a * b) / gcd(a, b);",
+			"}\n",
+			"\n",
+			"int main(){\n",
+			"clock_t tStart = clock();",
+			"    ios_base::sync_with_stdio(false);",
+			"    cin.tie(NULL);",
+			"\n    $1",
+			"\n\n",
+			"cout<<(double)(clock() - tStart)/CLOCKS_PER_SEC;",
+			"    return 0;",
+			"}\n",
+			"",
+		],
+		"description": "This is a c++ sniffpet",
+	},
+	"for loop": {
+		"prefix": "forl",
+		"body": [
+			"for($1 $2 = $3 ; $2 < $4 ; $2++)",
+			"{",
+			"  ${0:/* code */}",
+			"}"
+		],
+		"description": "For Loop"
+	}
+}
