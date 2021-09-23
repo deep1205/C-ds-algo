@@ -16,7 +16,8 @@
 			"ostream": "cpp",
 			"cmath": "cpp",
 			"chrono": "cpp",
-			"random": "cpp"
+			"random": "cpp",
+			"functional": "cpp"
 		},
 		"terminal.integrated.defaultProfile.windows": "GitBash",
 		"terminal.integrated.profiles.windows": {
