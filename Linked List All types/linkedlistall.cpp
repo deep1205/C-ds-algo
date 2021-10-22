@@ -153,13 +153,13 @@ printlist(head);
    cout<<" Reverse Linked list is ";
    printlist(newhead);
 
-//  cout<<"\n delete first node from beginning \n";
-//  deletefromfirst(&head);
-//  printlist(head);
+ cout<<"\n delete first node from beginning \n";
+  deletefromfirst(&head);
+  printlist(head);
  
-//  cout<<"\n delete node after 9 i.e 2nd position \n";
-//  deletefrompos(&head,2);
-//  printlist(head);
+  cout<<"\n delete node after 9 i.e 2nd position \n";
+  deletefrompos(&head,2);
+  printlist(head);
  
 
  

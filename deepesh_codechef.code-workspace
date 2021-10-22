@@ -17,7 +17,10 @@
 			"cmath": "cpp",
 			"chrono": "cpp",
 			"random": "cpp",
-			"functional": "cpp"
+			"functional": "cpp",
+			"numeric": "cpp",
+			"sstream": "cpp",
+			"regex": "cpp"
 		},
 		"terminal.integrated.defaultProfile.windows": "GitBash",
 		"terminal.integrated.profiles.windows": {
@@ -41,5 +44,6 @@
 				"icon": "terminal-bash"
 			}
 		},
+		"zenMode.restore": false,
 }
 }

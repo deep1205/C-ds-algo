@@ -9,8 +9,7 @@ using namespace std;
 void solve(){
 
 
-   float f=((float)(5))/3;
-   cout<<f;
+   cout<<"HEllo wodl";
     
 }
 signed main(){

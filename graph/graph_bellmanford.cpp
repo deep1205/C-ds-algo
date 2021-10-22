@@ -13,13 +13,14 @@ struct node{
 // BEllman ford is useed to find negative cycle and shortedt distance array in case of negatiev weight
 // time coompllexity =n*e;
 int main(){
-    int n,m;
-    cin>>n>>m;
+    int n,m,t,c;
+    cin>>n>>m>>t>>c;
     vector<node>edges;
     for(int i=0;i<m;i++){
         int u,v,w;
-        cin>>u>>v>>w;
-        edges.push_back(node(u,v,w));
+        cin>>u>>v;
+        edges.push_back(node(u,v,c));
+        edges.push_back(node(v, u, c));
     }
     int src=0;
     cin>>src;
