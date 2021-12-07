@@ -30,7 +30,7 @@ class graph
         while(!q.empty())
         {
 
-            T node=q.front();
+        /*    T node=q.front();*/
         q.pop();
         cout<<node<<" ";
            for(int nbr:m[node])

@@ -1,1 +1,1 @@
-8
+Sum of all characters is 2044

@@ -41,7 +41,7 @@ void subsetsum(vector<int> arr, int N)
     // method1(0,v,res,arr);
 
     //printsubsequence without duplicates
-    method2(0, v, res, arr);
+    method1(0, v, res, arr);
 
     for (auto i : res)
     {

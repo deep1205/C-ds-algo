@@ -1,52 +1,42 @@
-#pragma GCC optimize("Ofast")
-#include "bits/stdc++.h"
+#include<bits/stdc++.h>
 using namespace std;
-#define int         long long
-#define endl         '\n'
-#define M             1000000007 
-
-struct myclass{
-    vector<int>v;
-    myclass(vector<int> x){
-       v=x;
+long long int ASCIIWordSum(string str,
+                          vector<long long int>& sumArr)
+{
+ 
+    int l = str.length();
+    int sum = 0;
+    long long int bigSum = 0L;
+    for (int i = 0; i < l; i++) {
+ 
+     
+        if (str[i] == ' ') {
+ 
+            bigSum += sum;
+            sumArr.push_back(sum);
+            sum = 0;
+        }
+        else
+ 
+          
+            sum +=  str[i];       
     }
-};
-void solve(){
-int n;
-cin>>n;
-vector<int>v(n);
-for(int i=0;i<n;i++){
-    cin>>v[i];
+ 
+  
+    sumArr.push_back(sum);
+    bigSum += sum;
+    return bigSum;
 }
-
-int ans=0;
-   set<myclass>s;
-   for(int i=0;i<n;i++){
-       for(int j=i;j<n;j++){
-           
-           vector<int>temp;
-           for(int k=0;k<=j;k++){
-               temp.push_back(v[k]);
-           }
-
-           if(s.find(temp)!=s.end()){
-               ans++;
-           }
-           else{
-               s.insert(myclass(temp));
-           }
-       }
-   }
-
-   cout<<ans;
-
+//
+int main(){
+	string str;
+	getline(cin,str);
+    vector<long long int> sumArr;
+ 
+    long long int sum = ASCIIWordSum(str, sumArr);
+ 
     
-}
-signed main(){
-    ios_base::sync_with_stdio(false);
-    cin.tie(0);cout.tie(0);
-    int t=1;
-    //cin>>t;
-    while(t--) solve();
+   
+    cout << "Sum of all characters is " << sum;
     return 0;
 }
