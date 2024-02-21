@@ -43,7 +43,8 @@ int isbst(struct node*root)
 }
       int main()
       {
-
+  
+   freopen("output.txt", "w", stdout);
 
 
           struct node*root=NULL;
